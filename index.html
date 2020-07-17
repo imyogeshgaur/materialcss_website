@@ -1,93 +1,155 @@
 <!DOCTYPE html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>My Portfolio using materialcss</title>
-    <meta name="description" content="">
-    <link rel="stylesheet" href="">
-    
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <!-- google Font  -->
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Oswald:wght@300&family=Roboto:ital@1&display=swap" rel="stylesheet">
-    
-  
-    <!-- jquery cdn -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
-    </head>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My Portfolio using materialcss</title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="">
 
-    <style>
-      *{font-family: 'Josefin Sans', sans-serif;}
-       .heading{font-family: 'Roboto', sans-serif;}
-       .about{font-family: 'Oswald', sans-serif;}
-    </style>
-    <body>
-      
-      <!-- NavBar of the website -->
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- google Font  -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Indie+Flower&family=Josefin+Sans:ital@1&family=Lobster&family=Orbitron&family=Oswald:wght@300&family=Roboto&display=swap"
+    rel="stylesheet">
+
+
+  <!-- jquery cdn -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Css by Me -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- header of Our Portfolio -->
+
+  <header>
+    <!-- NavBar of the website -->
+    <div class="navbar-fixed">
       <nav>
-        <div class="nav-wrapper deep-orange">
+        <div class="nav-wrapper deep-orange ">
           <a href="#" class="brand-logo">imyogeshgaur</a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href='#project'>My Projects</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-        <li><a href="#message">Message Me</a></li>
-      </ul>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href='#project'>My Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </div>
     </div>
-  </nav>
-  
-  <!-- side navbar for mobile devices -->
-  <ul class="sidenav" id="mobile-demo">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About Me</a></li>
-    <li><a href='#project'>My Projects</a></li>
-    <li><a href="#contact">Contact Me</a></li>
-    <li><a href="#message">Message Me</a></li>
-  </ul>
+    </nav>
 
-  <h1 class="center heading"> My Areas Of Interest</h1>
-  <!-- Carousel of Tech Used By Me -->
+    <!-- side navbar for mobile devices -->
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href='#project'>My Projects</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
 
-  <div class="carousel carousel-slider" style='margin-top: 3%;' id='home'>
-    <a class="carousel-item" href="#one!"><img style="height: 400px; margin:auto" src="img/webapp.jpg"></a>
-    <a class="carousel-item" href="#two!"><img style="height: 400px; margin:auto" src="img/app.png"></a>
-    <a class="carousel-item" href="#three!"><img style="height: 400px; margin:auto" src="img/data.jpg"></a>
-  </div>
+  </header>
+
+
+  <!-- Home Section -->
+  <section id="home">
+
+    <h1 class="center heading"> My Areas Of Interest</h1>
+    <div class="row">
+      <div class="col s9 l6 offset-l3 offset-s2">
+        <hr>
+      </div>
+    </div>
+    <!-- Carousel of Tech Used By Me -->
+
+    <div class="carousel carousel-slider" id='home-text'>
+      <a class="carousel-item" href="#one!"><img src="img/webapp.jpg"></a>
+      <a class="carousel-item" href="#two!"><img src="img/app.png"></a>
+      <a class="carousel-item" href="#three!"><img id='data' src="img/data.jpg"></a>
+    </div>
+
+  </section>
 
 
   <!-- About Me Section -->
 
+  <section id="about">
+
+    <h1 class="center heading"> About Me </h1>
+
+    <div class="row">
+
+      <div class="col s10 l4 offset-l4 offset-s1">
+        <hr>
+
+      </div>
+    </div>
+    <div class="row">
+
+      <!-- TODO: Make a Carousel Of Images -->
+
+      <div class='col s12 l4'>
+
+        <img id='mypic1' src="img/yogesh.jpg" alt="mypic">
+
+      </div>
+
+      <div class='col s12 l7'>
+        <h4>I am currently a 3rd year B.tech CSE student of <a href="https://www.krishnacollege.ac.in"
+            target='_yogesh'>Krishna Engineering College Ghaziabad</a>. I am currently working on my startup <a
+            href="https://aztecs-india.ueniweb.com/" target='_yogesh'>Aztecs India</a> in which we are planning to make
+          a team that will develop innovative projects that will help our country to grow.I have 9 months of experience
+          in developing web and mobile apps for both android and iOS,beside this I am also gained some experience in the
+          field of Data Science.</h4>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- My Project Section -->
+
+  <section id="project">
+
+  </section>
+
+  <!-- Contact Section -->
+
+  <section id="contact">
 
 
 
+  </section>
 
+  <!-- Footer of Our Portfolio -->
 
+  <footer>
 
-
+  </footer>
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
   <!-- About Me Page of the Website -->
   <script>
-  $(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
-      $('.carousel.carousel-slider').carousel({
+    $(document).ready(function () {
+      $('.sidenav').sidenav();
+    });
+    $('.carousel.carousel-slider').carousel({
       fullWidth: true,
       indicators: true,
     });
- 
+
  //TODO: Make the slider autofunctional
-    </script>
-  </body>
-  </html>
+  </script>
+</body>
+
+</html>
